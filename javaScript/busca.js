@@ -1,12 +1,12 @@
 document.getElementById('search-bar').addEventListener('keyup', function() {
     let filter = this.value.toLowerCase();
-    let products = document.querySelectorAll('.product-card');
+    let products = document.querySelectorAll('.NameRemedies');
     
     products.forEach(function(product) {
-        let productName = product.querySelector('.product-name').innerText.toLowerCase();
+        let productName = product.querySelector('.td').innerText.toLowerCase();
         
         if (productName.includes(filter)) {
-            product.style.display = 'block';
+            product.style.display = 'table-row'; // Use 'table-row' para exibir corretamente nas linhas da tabela
         } else {
             product.style.display = 'none';
         }

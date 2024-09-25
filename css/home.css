@@ -62,6 +62,7 @@ header .auth-buttons button {
 .search-container{
     display: flex;
     flex-wrap: wrap;
+    padding: 2px;
     justify-content: center; /* Centraliza as fileiras */
     background-color: white;
     position: static;
@@ -94,15 +95,17 @@ body{
 .title h1 {
     margin-bottom: 20px; /* Adiciona espaço abaixo do título */
     text-align: center;
+
 }
 
 .title .paragrafh {
     margin-top: 0; /* Remover margem padrão se necessário */
-    
+    text-align: justify;
+    width: 80%;
 }
 
 .proced {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 20px;
     font-size: 1.1em;
     align-items: center;
