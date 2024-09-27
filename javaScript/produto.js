@@ -1,19 +1,24 @@
-// Função para obter os parâmetros da URL
-function getQueryParams() {
+
     const params = new URLSearchParams(window.location.search);
-    const name = params.get('name');
-    const description = params.get('description');
-    return { name, description };
-}
+    const id = params.get("id")
+    const remedy = listaRemedios.find(item =>item.id == id)
+    if(!remedy){
+        const confirmacion = confirm("Produto não encontrado!!")
+        if(confirmacion){
+            window.location.href = "Medicamentos.html"
+         }
+    }else{
+        const divPrincipal = document.querySelector(".prodDesc")
+        divPrincipal.innerHTML = `
+            <h1 class="titulo">${remedy.name}</h1>
+            <br>
+            <p class="paragraph">${remedy.description}</p>
+            <div class="button-container">
+                <a href="localizarRemedio.html?id=${remedy.id}"><button>Localizar Medicamento</button></a>
+                <a href="Agendamentos.html?id=${remedy.id}"><button>Agendar horário</button></a>
+            </div>
+        `
+    }
 
-// Função para exibir os dados na página
-function displayProductInfo() {
-    const { name, description } = getQueryParams();
-    
-    // Exibe os dados no HTML
-    document.getElementById('name').textContent = name;
-    document.getElementById('description').textContent = description;
-}
+  
 
-// Executa a função ao carregar a página
-window.onload = displayProductInfo;

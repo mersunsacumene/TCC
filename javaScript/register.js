@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                          49, 51, 53, 54, 55, 61, 62, 63, 64, 65, 66, 67, 68, 69, 
                          71, 73, 74, 75, 77, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 
                          91, 92, 93, 94, 95, 96, 97, 98, 99];
-
         const dddSelect = document.getElementById('ddd-select');
-
         dddList.forEach(ddd => {
             const option = document.createElement('option');
             option.value = ddd;
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
             dddSelect.appendChild(option);
         });
     }
-
     // Adiciona eventos
     document.getElementById('show-password').addEventListener('change', togglePasswordVisibility);
 
@@ -55,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const phoneInput = document.getElementById('phone-input'); // Certifique-se de que o ID seja correto
     phoneInput.addEventListener('input', function () {
         this.value = formatPhone(this.value); // Aplica a formatação
-        if (this.value.length > 9) {
+        if (this.value.length > 10) {
             this.value = this.value.slice(0, 9); // Limita a 9 caracteres
         }
     });
@@ -103,13 +100,13 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             confirmPasswordInput.setCustomValidity('');
         }
-        confirmPasswordInput.reportValidity(); // Exibe a mensagem de erro
+        confirmPasswordInput.reportValidity("Senha não conferem"); // Exibe a mensagem de erro
     }
 
     // Adiciona evento de input para o campo de senha
     passwordInput.addEventListener('input', function () {
         // Limita a senha a 12 caracteres
-        if (this.value.length > 12) {
+        if (this.value.length < 12) {
             this.value = this.value.slice(0, 12); // Limita a 12 caracteres
         }
 
@@ -138,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Adiciona evento de foco para habilitar o campo de confirmação
     confirmPasswordInput.addEventListener('focus', function () {
-        if (passwordInput.value.length < 10) {
+        if (passwordInput.value.length < 8) {
             alert('Digite pelo menos 8 caracteres na senha antes de confirmar.'); // Mensagem de aviso
             this.blur(); // Remove o foco
         }
@@ -148,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
     confirmPasswordInput.addEventListener('input', function () {
         if (this.value.length > 12) {
             this.value = this.value.slice(0, 12);
-            alert("A confirmação de senha não pode ter mais de 12 caracteres.");
+            alert("A senha não pode ter mais de 12 caracteres.");
         }
 
         // Verifica se a confirmação da senha está igual
