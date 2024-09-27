@@ -14,26 +14,22 @@
 
           <div class="input-box">
             <span class="icon"><ion-icon name="text-number"></ion-icon></span>
-            <input type="text" required />
-            <label>Codigo da Unidade</label>
+            <input type="text" id="unit-code" required placeholder="Código da Unidade" />
           </div>
 
           <div class="input-box">
             <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <input type="text" required />
-            <label>Username</label>
+            <input type="text" id="username" required placeholder="Username" />
           </div>
         
           <div class="input-box">
             <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-            <input type="password" id="password" required />
-            <label>Senha do administrador</label>
+            <input type="password" id="password" required placeholder="Senha do administrador" />
           </div>
 
           <div class="input-box">
             <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-            <input type="password" id="confirm-password" required />
-            <label>Confirmar Senha</label>
+            <input type="password" id="confirm-password" required disabled placeholder="Confirmar Senha" />
           </div>
 
           <!-- Checkbox para mostrar/ocultar senha -->
@@ -56,7 +52,7 @@
       </div>
     </div>
 
-    <script src="javaScript/register.js"></script>
+    <script src="javaScript/admRegister.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

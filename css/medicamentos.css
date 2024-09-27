@@ -23,10 +23,17 @@ table {
     text-align: justify;
 }
 
-th, td {
+th{
     border: 2px solid #ff8800;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 40px;
+    text-align: justify;
+
+}
+
+td {
+    border: 2px solid #ff8800;
+    padding: 10px 40px;
+    text-align: justify;
 }
 
 td a {

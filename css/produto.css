@@ -71,14 +71,14 @@ header .auth-buttons button {
 
 p {
     margin-top: 50px;
-    width: 50%;
-    height: 270px;
+    width: max-content;
+    height: max-content;
     margin: auto;
-    text-align: center;
-    padding: 10px;
+    text-align: justify;
+    padding: 20px;
     background-color: #fff;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 .paragraph{
 
@@ -88,6 +88,7 @@ p {
 h1 {
     font-size: 3.5em;
     color: #fff;
+    padding: 10px;
 }
 
 /* Estilos para a seção dos botões abaixo de prodDesc */
@@ -95,7 +96,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin-top: 20px;
     /* Espaço entre a descrição do produto e os botões */
 }
@@ -103,7 +104,7 @@ h1 {
 .button-container button {
     margin-right: 20px;
     padding: 10px 20px;
-    font-size: 1.1em;
+    font-size: 1.5em;
     cursor: pointer;
     border: 2px solid #ff8800;
     border-radius: 5px;        
