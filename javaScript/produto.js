@@ -15,7 +15,6 @@
             <p class="paragraph">${remedy.description}</p>
             <div class="button-container">
                 <a href="localizarRemedio.html?id=${remedy.id}"><button>Localizar Medicamento</button></a>
-                <a href="Agendamentos.html?id=${remedy.id}"><button>Agendar horário</button></a>
             </div>
         `
     }

@@ -111,6 +111,7 @@ section {
     grid-template-columns: repeat(3, 1fr); /* Três colunas de cards */
     gap: 40px;
     padding: 20px;
+    width: 100%;
 }
 
 /* Estilo Individual dos Itens do Grid */
@@ -159,7 +160,7 @@ iframe {
 /* Para dispositivos maiores */
 @media (min-width: 900px) {
     section {
-        grid-template-columns: repeat(4, 1fr); /* Quatro colunas em telas maiores */
+        grid-template-columns: repeat(3, 1fr); /* Quatro colunas em telas maiores */
     }
 }
 
