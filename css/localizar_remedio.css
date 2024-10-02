@@ -128,3 +128,7 @@ header .auth-buttons button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.button-container button:hover {
+    background-color: #0A4973; /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+}

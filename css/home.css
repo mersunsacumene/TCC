@@ -79,9 +79,8 @@ header .auth-buttons button {
     transition: background-color 0.3s, color 0.3s;
 }
 .search-container button:hover {
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #0A4973;
+    transition: background-color 0.3s ease; 
 }
 
 .search-input {
@@ -181,7 +180,6 @@ iframe{
 }
 
 .button-container button:hover {
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #0A4973;
+    transition: background-color 0.3s ease;
 }

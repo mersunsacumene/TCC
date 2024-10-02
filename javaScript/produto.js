@@ -10,13 +10,13 @@
     }else{
         const divPrincipal = document.querySelector(".prodDesc")
         divPrincipal.innerHTML = `
-            <h1 class="titulo">${remedy.name}</h1>
-            <br>
-            <p class="paragraph">${remedy.description}</p>
-            <div class="button-container">
-                <a href="localizarRemedio.html?id=${remedy.id}"><button>Localizar Medicamento</button></a>
-            </div>
-        `
+              <h1 class="titulo">${remedy.name}</h1>
+        <br>
+        <p class="paragraph">${remedy.description}</p>
+        <div class="button-container">
+            <a href="localizarRemedio.html?id=${remedy.id}"><button id="locateButton">Localizar Medicamento</button></a>
+        </div>
+    `
     }
 
   
