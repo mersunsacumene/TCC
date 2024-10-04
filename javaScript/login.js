@@ -1,7 +1,6 @@
 function validateFields () {
 
 }
-
 function isEmailValid () {
     const email = document.getElementById("email").value;
     if (!email) {
@@ -9,7 +8,6 @@ function isEmailValid () {
     }
     return validateEmail(email)
 }
-
 function validateEmail (email) {
     return /\S+@\S+\.\S+/.test(email)
 }
@@ -17,15 +15,12 @@ function validateEmail (email) {
 function isPasswordValid () {
 
 }
-
 function toggleEmailErrors () {
 
 }
-
 function toggleEmailErrorsDisable() {
 
 }
-
 // Mostrar senha
 document.getElementById('show-password').addEventListener('change', function () {
     const passwordField = document.getElementById('password');

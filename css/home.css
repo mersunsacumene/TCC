@@ -64,9 +64,23 @@ header .auth-buttons button {
     flex-wrap: wrap;
     padding: 2px;
     justify-content: center; /* Centraliza as fileiras */
-    background-color: white;
+    background-color: #0A4973;
     position: static;
-
+}
+.search-container button{
+    margin: 0px 20px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: 2px solid #ff8800;
+    border-radius: 5px;        
+    background-color: #ff8800;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+.search-container button:hover {
+    background-color: #0A4973;
+    transition: background-color 0.3s ease; 
 }
 
 .search-input {
@@ -166,7 +180,6 @@ iframe{
 }
 
 .button-container button:hover {
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #0A4973;
+    transition: background-color 0.3s ease;
 }

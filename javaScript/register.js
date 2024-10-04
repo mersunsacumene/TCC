@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (this.value.length < 12) {
             this.value = this.value.slice(0, 12); // Limita a 12 caracteres
         }
-
         // Habilita o campo de confirmação de senha após 8 dígitos na senha
         passwordInput.addEventListener('input', function () {
             // Limita a senha a 12 caracteres

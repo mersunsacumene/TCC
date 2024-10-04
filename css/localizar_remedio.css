@@ -65,11 +65,11 @@ header .auth-buttons {
 }
 .Mapa{
     width: 50%;
-    height: fit-content;
+    height: max-content;
 }
 iframe{
     width: 80%;
-    height: 35rem;
+    height: 30rem;
 }
 
 header .auth-buttons button {
@@ -88,7 +88,8 @@ header .auth-buttons button {
     border: 1px solid #ddd;
     border-radius: 8px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: max-content;
+    height: min-content;
 }
 
 .farmacias h2 {
@@ -106,4 +107,28 @@ header .auth-buttons button {
 
 .farmacias ul li:last-child {
     border-bottom: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: 2px solid #ff8800;
+    border-radius: 5px;        
+    background-color: #ff8800;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #0A4973; /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
 }

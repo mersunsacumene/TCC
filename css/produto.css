@@ -114,7 +114,6 @@ h1 {
 }
 
 .button-container button:hover {
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #0A4973; /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
 }

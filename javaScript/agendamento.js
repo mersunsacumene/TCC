@@ -10,13 +10,10 @@ listaCards.forEach(item => {
         <p>${item.description}</p>
         <iframe src=${item.maps}></iframe>
         <div class="button-container">
-        <button>Reagendar horário</button>
+        <button><a href="janelaAgendar.html" style="color: white">Reagendar horário</a></button>
         <button>Cancelar Agendamento</button>
         </div>
     `
-
     cardsAgenda.appendChild(div);
-    
-
 
 });
