@@ -116,7 +116,6 @@ iframe {
 .button-container button {
     margin: 0px;
     padding: 10px 20px;    
-    text-decoration: none;
     font-size: 1.1em;
     cursor: pointer;
     border: 2px solid #ff8800;
@@ -124,6 +123,9 @@ iframe {
     background-color: #ff8800;
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
+}
+.button-container button a{
+    text-decoration: none;
 }
 .button-container button:hover {
     background-color: #0A4973;
