@@ -9,7 +9,7 @@ listaCards.forEach(item => {
         <h3>${item.hours}</h3>
         <p>${item.description}</p>
         <div class="button-container">
-        <button><a href="janelaAgendar.html" style="color: white">Reagendar horário</a></button>
+        <button><a href="../Users/janelaAgendar.html" style="color: white">Reagendar horário</a></button>
         <button>Cancelar Agendamento</button>
         </div>
     `
