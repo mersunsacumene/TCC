@@ -63,8 +63,8 @@ header .auth-buttons button {
     display: flex;
     flex-wrap: wrap;
     padding: 2px;
-    justify-content: center; /* Centraliza as fileiras */
-    background-color: #0A4973;
+    justify-content: center;
+    background-color: #fff;
     position: static;
 }
 .search-container button{

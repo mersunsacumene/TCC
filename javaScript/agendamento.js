@@ -8,7 +8,6 @@ listaCards.forEach(item => {
         <h3>${item.date}</h3>
         <h3>${item.hours}</h3>
         <p>${item.description}</p>
-        <iframe src=${item.maps}></iframe>
         <div class="button-container">
         <button><a href="janelaAgendar.html" style="color: white">Reagendar horário</a></button>
         <button>Cancelar Agendamento</button>
