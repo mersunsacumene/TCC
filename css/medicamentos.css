@@ -9,37 +9,30 @@
 body{    
     background-color: #0A4973;  
 }
-/* Centraliza a tabela e define seu estilo */
 .table-container {
     position: absolute;
     margin-left: 20%;
     width: 100%;
     color: white;
 }
-
 table {
     width: 60%;
     border-collapse: collapse;
     text-align: justify;
 }
-
 th{
     border: 2px solid #ff8800;
     padding: 10px 40px;
     text-align: justify;
-
 }
-
 td {
     border: 2px solid #ff8800;
     padding: 10px 40px;
     text-align: justify;
 }
-
 td a {
     color: white;
 }
-
 header {
     background-color: #0A4973;
     display: flex;
@@ -48,7 +41,6 @@ header {
     padding: 10px;
     color: white;
 }
-
 header .logo img {
     background: white;
     border-radius: 3%;
@@ -56,10 +48,10 @@ header .logo img {
     width: 180px;
     padding: 0 1rem 0 1rem;
 }
-nav ul li a.active, /* Estilo para o item ativo */
-nav ul li a:hover {  /* Também aplicamos o hover para consistência */
-    color: #ff8800;  /* Destaque laranja */
-    font-weight: bold; /* Opcional: torna o item em negrito */
+nav ul li a.active, 
+nav ul li a:hover { 
+    color: #ff8800; 
+    font-weight: bold;
 }
 
 header nav ul {
@@ -68,21 +60,17 @@ header nav ul {
     margin: 0;
     padding: 0;
 }
-
 header nav ul li {
     margin-right: 20px;
 }
-
 header nav ul li a {
     color: white;
     text-decoration: none;
 }
-
 header .auth-buttons {
     display: flex;
     align-items: center;
 }
-
 header .auth-buttons button {
     margin-left: 10px;
     padding: 5px 15px;
@@ -92,21 +80,19 @@ header .auth-buttons button {
     color: black;
     cursor: pointer;
 }
-
 .search-container{
     display: flex;
     flex-wrap: wrap;
     padding: 25px;
-    gap: 16px; /* Espaçamento entre os cards */
-    justify-content: center; /* Centraliza as fileiras */
+    gap: 16px;
+    justify-content: center;
 }
-
 .search-input {
     width: 60%;
     padding: 10px;
     font-size: 24px; 
     border-radius: 20px;
-    border: 1px solid black;
+    border: 2px solid black;
     text-indent: 30px;
     background: url('search-icon.png') no-repeat 10px center;
     background-size: 20px 20px;
