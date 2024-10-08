@@ -1,34 +1,47 @@
-function validateFields () {
+document.addEventListener('DOMContentLoaded', function () {
+    const usernameInput = document.querySelector('.input-box input[type="text"]');
+    const passwordInput = document.getElementById('password');
+    const showPasswordCheckbox = document.getElementById('show-password');
+    const loginButton = document.querySelector('.btn');
 
-}
-function isEmailValid () {
-    const email = document.getElementById("email").value;
-    if (!email) {
-        return false
+    // Função para mostrar/ocultar senhas
+    showPasswordCheckbox.addEventListener('change', function () {
+        const type = this.checked ? 'text' : 'password';
+        passwordInput.type = type;
+    });
+
+    // Função para validar a senha
+    function isPasswordValid() {
+        const password = passwordInput.value;
+        if (!password) {
+            alert("A senha é obrigatória.");
+            return false;
+        }
+        return true; // Você pode adicionar mais validações, como comprimento mínimo
     }
-    return validateEmail(email)
-}
-function validateEmail (email) {
-    return /\S+@\S+\.\S+/.test(email)
-}
 
-function isPasswordValid () {
+    // Adiciona o evento de clique ao botão de login
+    loginButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita o envio do formulário
 
-}
-function toggleEmailErrors () {
+        // Verifica se a senha é válida
+        if (!isPasswordValid()) {
+            return; // Se a senha não for válida, não continua
+        }
 
-}
-function toggleEmailErrorsDisable() {
+        const username = usernameInput.value;
+        const password = passwordInput.value;
 
-}
-// Mostrar senha
-document.getElementById('show-password').addEventListener('change', function () {
-    const passwordField = document.getElementById('password');
+        // Recuperar credenciais do localStorage
+        const storedCredentials = JSON.parse(localStorage.getItem('adminCredentials'));
 
-    // Checa se o checkbox de mostrar senha está marcado
-    if (this.checked) {
-        passwordField.type = 'text';
-    } else {
-        passwordField.type = 'password';
-    }
+        // Verifica se as credenciais correspondem
+        if (storedCredentials && storedCredentials.username === username && storedCredentials.password === password) {
+            alert('Seja Bem Vindo, Logado com sucesso!');
+            // Redirecionar para a página inicial
+            window.location.href = 'homeAdmin.html'; // Mude para a página que deseja redirecionar
+        } else {
+            alert('Nome de usuário ou senha incorretos. Por favor, tente novamente.');
+        }
+    });
 });
