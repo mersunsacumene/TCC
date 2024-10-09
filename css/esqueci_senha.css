@@ -1,21 +1,4 @@
 
-/* Reset and Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url() no-repeat center/cover;
-}
-
-/* Logo Background */
 .logoFundo {
     position: fixed;
     top: 0;
@@ -36,14 +19,11 @@ body {
     object-fit: cover;
 }
 
-/* Wrapper */
 .wrapper {
     position: absolute;
     top: 50%;
     right: 7%;
     width: 540px;
-    max-width: 70%;
-    height: 380px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
@@ -57,7 +37,6 @@ body {
     padding: 20px;
 }
 
-/* Form Header */
 .form-box h2 {
     font-size: 3.5em;
     color: #162938;
@@ -65,7 +44,6 @@ body {
     margin-bottom: 50px;
 }
 
-/* Input Box */
 .input-box {
     position: relative;
     height: 40px;
@@ -110,7 +88,6 @@ body {
     font-size: 0.8em;
 }
 
-/* Icon */
 .input-box .icon {
     position: absolute;
     right: 8px;
@@ -119,7 +96,6 @@ body {
     line-height: 40px;
 }
 
-/* Button */
 .btn {
     width: 100%;
     height: 45px;
@@ -134,7 +110,6 @@ body {
     margin-top: 20px;
 }
 
-/* voltar */
 .voltar {
     font-size: 0.9em;
     color: #162938;
@@ -143,7 +118,6 @@ body {
     margin: 25px 0 10px;
     display: flex;
     justify-content: center;
-    /* Ajustado para centralizar */
 }
 
 .voltar a {
@@ -157,7 +131,6 @@ body {
     text-decoration: underline;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .wrapper {
         width: 90%;

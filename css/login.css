@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .logoFundo {
     position: fixed;
     top: 0;
@@ -102,22 +89,17 @@ body {
     color: #162938;
     line-height: 57px;
 }
-
-/* Show Password Checkbox */
 .show-password-container {
     font-size: 0.9em;
     color: #162938;
     font-weight: 500;
     margin-bottom: 15px;
-    /* Ajuste para espaçamento */
     display: flex;
 }
-
 .show-password-container input {
     accent-color: #162938;
     margin-right: 10px;
 }
-
 .select {
     font-size: 0.9em;
     color: #162938;
@@ -127,7 +109,6 @@ body {
     justify-content: space-between;
     
 }
-
 .btn {
     width: 100%;
     height: 55px;
@@ -140,7 +121,6 @@ body {
     color: #162938;
     font-weight: 500;
 }
-
 .login-register {
     font-size: 1em;
     color: #162938;
@@ -149,13 +129,11 @@ body {
     margin: 25px 0 10px;
     justify-content: space-between;
 }
-
 .login-register p a {
     color: #162938;
     text-decoration: none;
     font-weight: 600;
 }
-
 .login-register p a:hover {
     text-decoration: underline;
 }

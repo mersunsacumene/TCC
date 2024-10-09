@@ -1,50 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #0A4973;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header { 
-    display: flex;
-    justify-content: space-between;    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-}
-
-header .logo img {
-    background: white;
-    border-radius: 3%;
-    height: 60px;
-    width: 180px;
-    padding: 0 1rem 0 1rem;
-}
-
-header .auth-buttons {
-    display: flex;
-    align-items: center;
-}
-
-header .auth-buttons button {
-    margin-left: 10px;
-    padding: 5px 15px;
-    border-radius: 10px;
-    background-color: #ffcc00;
-    border: none;
-    color: black;
-    cursor: pointer;
-}
-
 .wrapper {
     position: absolute;
     width: 500px;
@@ -106,7 +59,6 @@ header .auth-buttons button {
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
-
 .input-box .icon {
     position: absolute;
     right: 20px;
@@ -114,22 +66,17 @@ header .auth-buttons button {
     color: #162938;
     line-height: 57px;
 }
-
-/* Show Password Checkbox */
 .show-password-container {
     font-size: 0.9em;
     color: #162938;
     font-weight: 500;
     margin-bottom: 15px;
-    /* Ajuste para espaçamento */
     display: flex;
 }
-
 .show-password-container input {
     accent-color: #162938;
     margin-right: 10px;
 }
-
 .btn {
     width: 100%;
     height: 50px;
@@ -142,7 +89,6 @@ header .auth-buttons button {
     color: #162938;
     font-weight: 500;
 }
-
 .login-register {
     font-size: 1.5em;
     color: #162938;
@@ -150,13 +96,11 @@ header .auth-buttons button {
     font-weight: 500;
     margin: 25px 0 10px;
 }
-
 .login-register p a {
     color: #162938;
     text-decoration: none;
     font-weight: 600;
 }
-
 .login-register p a:hover {
     text-decoration: underline;
 }

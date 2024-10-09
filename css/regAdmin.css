@@ -1,52 +1,3 @@
-/* CSS existente */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #0A4973;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header { 
-    display: flex;
-    justify-content: space-between;    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-}
-
-header .logo img {
-    background: white;
-    border-radius: 3%;
-    height: 60px;
-    width: 180px;
-    padding: 0 1rem 0 1rem;
-}
-
-header .auth-buttons {
-    display: flex;
-    align-items: center;
-}
-
-header .auth-buttons button {
-    margin-left: 10px;
-    padding: 5px 15px;
-    border-radius: 10px;
-    background-color: #ffcc00;
-    border: none;
-    color: black;
-    cursor: pointer;
-}
-
-
 .wrapper {
     position: fixed;
     width: 540px;
@@ -63,14 +14,12 @@ header .auth-buttons button {
     top: 50%;
     transform: translateY(-50%);
 }
-
 .form-box h2 {
     font-size: 3.5em;
     color: #162938;
     text-align: center;
     margin-bottom: 0px;
 }
-
 .input-box {
     position: relative;
     width: 100%;
@@ -80,7 +29,6 @@ header .auth-buttons button {
     display: flex;
     align-items: center;
 }
-
 .input-box label {
     position: absolute;
     top: 30%;
@@ -92,12 +40,10 @@ header .auth-buttons button {
     pointer-events: none;
     transition: 0.5s;
 }
-
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
 }
-
 .input-box input {
     width: 100%;
     height: 100%;
@@ -109,7 +55,6 @@ header .auth-buttons button {
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
-
 .input-box .icon {
     position: absolute;
     right: 20px;
@@ -117,8 +62,6 @@ header .auth-buttons button {
     color: #162938;
     line-height: 57px;
 }
-
-/* Show Password Checkbox */
 .show-password-container {
     font-size: 0.9em;
     color: #162938;
@@ -126,12 +69,10 @@ header .auth-buttons button {
     margin-bottom: 15px;
     display: flex;
 }
-
 .show-password-container input {
     accent-color: #162938;
     margin-right: 10px;
 }
-
 .btn {
     width: 100%;
     height: 50px;
@@ -144,7 +85,6 @@ header .auth-buttons button {
     color: #162938;
     font-weight: 500;
 }
-
 .login-register {
     font-size: 1.5em;
     color: #162938;
@@ -152,13 +92,11 @@ header .auth-buttons button {
     font-weight: 500;
     margin: 25px 0 10px;
 }
-
 .login-register p a {
     color: #162938;
     text-decoration: none;
     font-weight: 600;
 }
-
 .login-register p a:hover {
     text-decoration: underline;
 }

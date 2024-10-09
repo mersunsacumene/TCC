@@ -1,20 +1,3 @@
-/* Reset and Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url() no-repeat center/cover;
-}
-
-/* Logo Background */
 .logoFundo {
     position: fixed;
     top: 0;
@@ -34,8 +17,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
-/* Wrapper */
 .wrapper {
     position: absolute;
     top: 50%;
@@ -55,16 +36,12 @@ body {
     transform: translateY(-50%);
     padding: 20px;
 }
-
-/* Form Header */
 .form-box h2 {
     font-size: 3.5em;
     color: #162938;
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* Input Box */
 .input-box,
 .input-box-tiny,
 .input-box-phone {
@@ -76,21 +53,15 @@ body {
     flex-direction: column;
     align-items: flex-start;
 }
-
 .input-box {
     border-bottom: 2px solid #162938;
 }
-
 .input-box-tiny {
     border-bottom: none;
-    /* Remove a borda inferior */
 }
-
 .input-box-phone {
     border-bottom: 2px solid #162938;
-    /* Adiciona a borda inferior para consistência */
 }
-
 .input-box label,
 .input-box-tiny label,
 .input-box-phone label {
@@ -104,7 +75,6 @@ body {
     pointer-events: none;
     transition: 0.5s;
 }
-
 .input-box input,
 .ddd-select,
 .input-box-tiny input,
@@ -120,7 +90,6 @@ body {
     padding: 0 5px;
     box-sizing: border-box;
 }
-
 .input-box input:focus~label,
 .input-box input:valid~label,
 .input-box-tiny input:focus~label,
@@ -130,25 +99,19 @@ body {
     top: -5px;
     font-size: 0.8em;
 }
-
-/* Icon */
 .input-box .icon {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
     color: #162938;
     line-height: 40px;
-    /* Ajustado para corresponder ao tamanho dos campos */
 }
-
-/* DDD and Phone Number */
 .ddd-phone-container {
     display: flex;
     align-items: flex-start;
     margin: 0;
     padding: 0;
 }
-
 .ddd-phone-container .input-box-tiny {
     flex: 1;
     display: flex;
@@ -158,7 +121,6 @@ body {
     margin-right: 10px;
     padding: 0;
 }
-
 .ddd-phone-container .input-box-tiny label {
     position: relative;
     top: auto;
@@ -170,7 +132,6 @@ body {
     margin-bottom: 5px;
     transition: none;
 }
-
 .ddd-phone-container .ddd-select {
     width: 100%;
     height: 100%;
@@ -182,20 +143,14 @@ body {
     font-weight: 600;
     box-sizing: border-box;
 }
-
-/* Show Password Checkbox */
 .show-password-container {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    /* Ajuste conforme necessário */
 }
-
 .show-password-container input {
     margin-right: 10px;
 }
-
-/* Button */
 .btn {
     width: 100%;
     height: 45px;
@@ -209,8 +164,6 @@ body {
     font-weight: 500;
     margin-top: 20px;
 }
-
-/* Login and Register */
 .login-register {
     font-size: 0.9em;
     color: #162938;
@@ -219,24 +172,18 @@ body {
     margin: 25px 0 10px;
     display: flex;
     justify-content: center;
-    /* Ajustado para centralizar */
 }
-
 .login-register p {
     margin: 0;
 }
-
 .login-register p a {
     color: #162938;
     text-decoration: none;
     font-weight: 600;
 }
-
 .login-register p a:hover {
     text-decoration: underline;
 }
-
-/* Responsividade */
 @media (max-width: 768px) {
     .wrapper {
         width: 90%;
