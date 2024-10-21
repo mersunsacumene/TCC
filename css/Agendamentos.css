@@ -8,8 +8,8 @@ p{
 }
 .title {
     font-size: 1.5rem;
-    color: #fff;
-    margin-top: 3rem;
+    color: #0A4973;
+    margin-top: 2rem;
     padding: 30px;
     font: bold;
     width: 100%;
@@ -21,14 +21,14 @@ p{
     font-size: 1.1em;
     align-items: center;
     text-align: center;
-    background-color: #fff;
+    background-color: #0A4973;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    color: #000;
+    color: #fff;
 }
 .proced h2 {
-    color: #0A4973;
-    margin-bottom: 40px;
+    color: #fff;
+    margin-bottom: 30px;
 }
 section {
     color: #fff;
